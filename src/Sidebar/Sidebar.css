@@ -1,4 +1,5 @@
-/* SIDEBAR */
+@import "https://use.fontawesome.com/releases/v5.15.4/css/solid.css";
+@import "https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css";
 
 .sidebar {
     position: fixed;
@@ -176,47 +177,4 @@
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
-}
-
-/* FOOTER */
-
-.footer-premium {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-premium .text {
-    flex-shrink: 0;
-}
-
-.footer-premium .footer-premium__title {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.footer-premium .footer-premium__subtitle {
-    color: #fff;
-    font-size: 12px;
-    font-weight: 200;
-}
-
-.footer-premium button {
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
-    cursor: pointer;
-    flex-shrink: 0;
 }

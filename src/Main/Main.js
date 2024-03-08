@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.css";
 import cardImgs from './Cards';
 
 const Main = () => {
+    useEffect(() => {
+        const greetMsg = document.getElementById('greetings');
+        const currentHour = new Date().getHours();
+
+        if (currentHour >= 6 && currentHour < 12) {
+            greetMsg.innerText = 'Bom dia!'
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greetMsg.innerText = 'Boa tarde!'
+        } else {
+            greetMsg.innerText = 'Boa noite!'
+        }
+    }, []);
+    
     return (
         <div className="playlist-container">
             <div id="result-playlists">
